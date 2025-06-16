@@ -2,104 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Rajeev Singh's Blog</title>
+  <title>Rajeev Singh's Colorful Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Black', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(45deg, #ff4e50, #f9d423);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    nav {
+      background: #ff6f61;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    article {
+      background: white;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-left: 10px solid #ff6f61;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    article:hover {
+      transform: scale(1.02);
+    }
+
+    article h2 {
+      color: #ff4e50;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      font-size: 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ffcc00;
+      color: #000;
+      padding: 5px 10px;
+      margin: 5px 0;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
-    <h1>Rajeev Singh's Blog</h1>
-    <nav>
-      <a href="#">Home</a> |
-      <a href="#">About</a> |
-      <a href="#">Blog</a> |
-      <a href="#">Projects</a> |
-      <a href="#">Contact</a>
-    </nav>
+    <h1>Rajeev Singh's Colorful Blog</h1>
+    <p>Thoughts, Stories & Ideas 🌈</p>
   </header>
 
-  <!-- Hero Section -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Me</a>
+    <a href="#">Blogs</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
+
   <section>
-    <h2>Welcome to My World of Code, Cloud & Creativity</h2>
-    <p>This is where I share my thoughts, tutorials, and experience on DevOps, Web Development, and Tech Trends.</p>
+    <article>
+      <h2>🌟 My Journey Into Tech</h2>
+      <p class="tag">#Technology</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae urna in purus luctus tincidunt. Proin vel sem eget sapien sodales facilisis. Curabitur eget commodo nunc.</p>
+    </article>
+
+    <article>
+      <h2>📸 Travel Diaries: Exploring the Himalayas</h2>
+      <p class="tag">#Travel</p>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer tristique laoreet magna at fringilla. Cras porta nisi vitae leo lobortis luctus.</p>
+    </article>
+
+    <article>
+      <h2>🔥 How I Stay Motivated Every Day</h2>
+      <p class="tag">#Inspiration</p>
+      <p>Duis auctor lacus a lectus laoreet, non tincidunt purus mattis. Sed laoreet convallis lorem, sed viverra nunc tincidunt non. Fusce varius risus non libero facilisis imperdiet.</p>
+    </article>
   </section>
 
-  <!-- Main Content and Sidebar -->
-  <div style="display: flex; gap: 30px; margin-top: 30px;">
-
-    <!-- Blog Posts -->
-    <main style="flex: 3;">
-      <!-- Post 1 -->
-      <article>
-        <h2>🔧 How I Built a CI/CD Pipeline with Jenkins & Docker</h2>
-        <p><strong>Date:</strong> June 10, 2025</p>
-        <p>In this tutorial, I show you step-by-step how I automated my deployment process using Jenkins, Docker, and GitHub Actions...</p>
-      </article>
-
-      <!-- Post 2 -->
-      <article>
-        <h2>🌐 Deploying Scalable Web Apps on AWS with Terraform</h2>
-        <p><strong>Date:</strong> May 29, 2025</p>
-        <p>If you're into DevOps and want to manage your AWS infrastructure as code, Terraform is your best friend. Here's how I deployed a real-world project...</p>
-      </article>
-
-      <!-- Post 3 -->
-      <article>
-        <h2>📈 SEO Tips for Developers: Get Your Blog Discovered</h2>
-        <p><strong>Date:</strong> May 14, 2025</p>
-        <p>Most developers ignore SEO. But small tweaks like proper headings, meta tags, and performance can skyrocket your traffic. Here's my guide...</p>
-      </article>
-
-      <!-- More Posts -->
-      <article>
-        <h2>🚀 Speed Up Your Website with Lazy Loading and Caching</h2>
-        <p>Loading speed matters. I implemented caching and lazy loading to cut my load time from 6s to 1.2s. Here's how...</p>
-      </article>
-
-      <article>
-        <h2>🔥 Top 10 VS Code Extensions I Use in 2025</h2>
-        <p>Whether you're a front-end or back-end developer, these VS Code extensions will boost your productivity and workflow...</p>
-      </article>
-    </main>
-
-    <!-- Sidebar -->
-    <aside style="flex: 1;">
-      <section>
-        <h3>👤 About Me</h3>
-        <p>Hi, I'm Rajeev Singh — a full-stack developer, cloud architect, and lifelong learner. I write about code, cloud, and personal growth.</p>
-      </section>
-
-      <section>
-        <h3>📂 Categories</h3>
-        <ul>
-          <li>DevOps</li>
-          <li>Cloud Computing</li>
-          <li>Web Development</li>
-          <li>Programming Tips</li>
-          <li>Career & Motivation</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>📌 Popular Posts</h3>
-        <ul>
-          <li>Build a CI/CD Pipeline in 1 Hour</li>
-          <li>Why I Switched from Azure to AWS</li>
-          <li>Top 5 Tools Every Developer Should Use</li>
-        </ul>
-      </section>
-    </aside>
-  </div>
-
-  <!-- Footer -->
-  <footer style="margin-top: 50px;">
-    <hr>
-    <p>&copy; 2025 Rajeev Singh. All rights reserved.</p>
-    <p>
-      <a href="#">LinkedIn</a> |
-      <a href="#">GitHub</a> |
-      <a href="#">Twitter</a>
-    </p>
+  <footer>
+    &copy; 2025 Rajeev Singh | Made with 💖 and HTML
   </footer>
 
 </body>
