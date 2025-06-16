@@ -2,125 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Rajeev Singh's Colorful Blog</title>
+  <title>Rajeev Singh's Blog</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Arial Black', sans-serif;
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
-      color: #222;
+      background: #f5f5f5;
     }
 
     header {
-      background: linear-gradient(45deg, #ff4e50, #f9d423);
+      background: #4CAF50;
+      padding: 20px;
       color: white;
-      padding: 60px 20px;
       text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    header h1 {
-      font-size: 4em;
-      margin: 0;
     }
 
     nav {
-      background: #ff6f61;
-      padding: 15px;
-      text-align: center;
+      background: #333;
+      overflow: hidden;
     }
 
     nav a {
-      text-decoration: none;
+      float: left;
+      display: block;
       color: white;
-      font-size: 20px;
-      margin: 0 15px;
-      font-weight: bold;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #ddd;
+      color: black;
     }
 
     section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 20px;
     }
 
-    article {
+    .blog-post {
       background: white;
-      padding: 30px;
-      margin-bottom: 40px;
-      border-left: 10px solid #ff6f61;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    article:hover {
-      transform: scale(1.02);
-    }
-
-    article h2 {
-      color: #ff4e50;
+    .blog-post img {
+      max-width: 100%;
+      border-radius: 10px;
     }
 
     footer {
-      background: #222;
-      color: #fff;
+      background: #4CAF50;
+      color: white;
       text-align: center;
-      padding: 30px;
-      font-size: 18px;
+      padding: 10px;
     }
 
-    .tag {
-      display: inline-block;
-      background: #ffcc00;
-      color: #000;
-      padding: 5px 10px;
-      margin: 5px 0;
-      font-size: 14px;
-      border-radius: 5px;
+    .tabs {
+      margin-top: 20px;
+    }
+
+    .tabs a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    .tabs a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Rajeev Singh's Colorful Blog</h1>
-    <p>Thoughts, Stories & Ideas 🌈</p>
+    <h1>Welcome to Rajeev Singh's Colorful Blog</h1>
+    <p>Tech | Travel | Life</p>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">About Me</a>
-    <a href="#">Blogs</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#tech">Tech</a>
+    <a href="#travel">Travel</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <section>
-    <article>
-      <h2>🌟 My Journey Into Tech</h2>
-      <p class="tag">#Technology</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae urna in purus luctus tincidunt. Proin vel sem eget sapien sodales facilisis. Curabitur eget commodo nunc.</p>
-    </article>
+  <section id="home">
+    <h2>🌟 Latest Posts</h2>
+    
+    <div class="blog-post">
+      <h3>Exploring the Future of AI</h3>
+      <img src="https://source.unsplash.com/800x400/?ai,technology" alt="AI Image">
+      <p>Artificial Intelligence is reshaping the future. <a href="#tech">Read more in Tech section</a>.</p>
+    </div>
 
-    <article>
-      <h2>📸 Travel Diaries: Exploring the Himalayas</h2>
-      <p class="tag">#Travel</p>
-      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer tristique laoreet magna at fringilla. Cras porta nisi vitae leo lobortis luctus.</p>
-    </article>
+    <div class="blog-post">
+      <h3>Trip to the Himalayas</h3>
+      <img src="https://source.unsplash.com/800x400/?mountains,travel" alt="Travel Image">
+      <p>One of the most breathtaking experiences! Check out the <a href="#travel">Travel tab</a> for full story.</p>
+    </div>
+  </section>
 
-    <article>
-      <h2>🔥 How I Stay Motivated Every Day</h2>
-      <p class="tag">#Inspiration</p>
-      <p>Duis auctor lacus a lectus laoreet, non tincidunt purus mattis. Sed laoreet convallis lorem, sed viverra nunc tincidunt non. Fusce varius risus non libero facilisis imperdiet.</p>
-    </article>
+  <section id="tech">
+    <h2>💻 Tech Articles</h2>
+    <div class="blog-post">
+      <h3>Why You Should Learn DevOps in 2025</h3>
+      <img src="https://source.unsplash.com/800x400/?devops,coding" alt="DevOps Image">
+      <p>DevOps is the heart of modern IT teams. It combines development and operations to speed up delivery.</p>
+    </div>
+  </section>
+
+  <section id="travel">
+    <h2>✈️ Travel Diaries</h2>
+    <div class="blog-post">
+      <h3>Top 5 Beaches in India</h3>
+      <img src="https://source.unsplash.com/800x400/?beach,sea" alt="Beach Image">
+      <p>India has some of the most serene and unexplored beaches. Let's dive into the beauty of nature.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>🙋 About Me</h2>
+    <div class="blog-post">
+      <img src="https://source.unsplash.com/150x150/?person" alt="Profile" style="float:right; margin-left: 20px;">
+      <p>Hello! I’m <strong>Rajeev Singh</strong>, a passionate blogger who loves to write about technology, travel, and life experiences. I believe in lifelong learning and sharing knowledge.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <div class="blog-post">
+      <p>Email: <a href="mailto:rajeev@example.com">rajeev@example.com</a></p>
+      <p>Instagram: <a href="https://instagram.com" target="_blank">Follow me</a></p>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Rajeev Singh | Made with 💖 and HTML
+    <p>&copy; 2025 Rajeev Singh | Designed with ❤️</p>
   </footer>
 
 </body>
